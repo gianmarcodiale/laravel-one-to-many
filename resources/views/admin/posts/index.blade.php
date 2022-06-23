@@ -14,12 +14,12 @@
         <table class="table table-striped table-inverse table-responsive">
             <thead class="thead-inverse">
                 <tr>
-                    <th>id</th>
-                    <th>title</th>
-                    <th>author</th>
-                    <th>cover_image</th>
-                    <th>slug</th>
-                    <th>actions</th>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Cover Image</th>
+                    <th>Slug</th>
+                    <th>Actions</th>
                 </tr>
             </thead>
             <tbody>

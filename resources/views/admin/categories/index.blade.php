@@ -42,7 +42,7 @@
                                 <td scope="row">{{ $category->id }}</td>
                                 <td>
                                     <form id="category-{{ $category->id }}"
-                                        action="{{ route('admin.categories.update', $category) }}" method="post">
+                                        action="{{ route('admin.categories.update', $category->slug) }}" method="post">
                                         @csrf
                                         {{-- PATCH because we edit only one value --}}
                                         @method('PATCH')
