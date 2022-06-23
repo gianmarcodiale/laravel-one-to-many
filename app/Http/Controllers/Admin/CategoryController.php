@@ -87,7 +87,7 @@ class CategoryController extends Controller
     public function update(Request $request, Category $category)
     {
         // Create method for updating categories
-        dd($request->all());
+        //dd($request->all());
         // Validate data
         $validated_data = $request->validate([
             'name' => ['required', Rule::unique('categories')->ignore($category)]

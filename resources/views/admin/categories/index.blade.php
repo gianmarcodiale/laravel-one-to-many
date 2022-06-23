@@ -41,7 +41,7 @@
                             <tr>
                                 <td scope="row">{{ $category->id }}</td>
                                 <td>
-                                    <form id="category-{{ $category }}"
+                                    <form id="category-{{ $category->id }}"
                                         action="{{ route('admin.categories.update', $category) }}" method="post">
                                         @csrf
                                         {{-- PATCH because we edit only one value --}}
@@ -55,7 +55,7 @@
                                 <td>
                                     {{-- Implement button with form attribute with ID for form sumbit --}}
                                     <div class="actions d-flex">
-                                        <button form="category-{{ $category }}" type="submit"
+                                        <button form="category-{{ $category->id }}" type="submit"
                                             class="btn btn-primary btn-sm text-white me-1">Update</button>
                                         <form action="{{ route('admin.categories.destroy', $category) }}" method="post">
                                             @csrf
