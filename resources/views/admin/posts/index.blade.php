@@ -59,7 +59,7 @@
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary"
                                                     data-bs-dismiss="modal">Close</button>
-                                                <form action="{{ route('admin.posts.destroy', $post->id) }}"
+                                                <form action="{{ route('admin.posts.destroy', $post->slug) }}"
                                                     method="post">
                                                     @csrf
                                                     @method('DELETE')
