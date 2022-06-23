@@ -50,7 +50,7 @@
                 <label for="cover_image" class="form-label">Cover Image</label>
                 <input type="text" name="cover_image" id="cover_image" class="form-control" placeholder=""
                     aria-describedby="coverImageHelp" value="{{ old('cover_image', $post->cover_image) }}">
-                <small id="coverImageHelp" class="text-muted">Edit cover image (max. 150 characters)</small>
+                <small id="coverImageHelp" class="text-muted">Edit cover image</small>
             </div>
 
             {{-- Form select for categories --}}
