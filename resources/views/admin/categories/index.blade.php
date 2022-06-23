@@ -13,11 +13,11 @@
     {{-- Create grid for data --}}
     <div class="container">
         <div class="row">
-            <div class="col">
+            <div class="col" id="category-index-left-col">
                 <form action="{{ route('admin.categories.store') }}" method="post">
                     @csrf
-                    <div class="mb-3 d-flex align-items-center mt-5">
-                        <input type="text" name="name" id="name" class="form-control w-50"
+                    <div class="mb-3 d-flex align-items-center add_category">
+                        <input type="text" name="name" id="name" class="form-control"
                             placeholder="Type a category" aria-describedby="helperName">
                         <div class="ms-1">
                             <button type="submit" class="btn btn-primary text-white">Add</button>
