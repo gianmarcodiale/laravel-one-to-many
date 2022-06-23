@@ -33,9 +33,9 @@
                         <td>
                             <div class="actions d-flex">
                                 <a class="btn btn-primary btn-sm text-white me-1"
-                                    href="{{ route('admin.posts.show', $post) }}">View</a>
+                                    href="{{ route('admin.posts.show', $post->slug) }}">View</a>
                                 <a class="btn btn-secondary btn-sm text-white me-1"
-                                    href="{{ route('admin.posts.edit', $post) }}">Edit</a>
+                                    href="{{ route('admin.posts.edit', $post->slug) }}">Edit</a>
 
                                 <!-- Button trigger modal -->
                                 <button type="button" class="btn btn-danger btn-sm text-white" data-bs-toggle="modal"
@@ -59,7 +59,7 @@
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary"
                                                     data-bs-dismiss="modal">Close</button>
-                                                <form action="{{ route('admin.posts.destroy', $post) }}"
+                                                <form action="{{ route('admin.posts.destroy', $post->id) }}"
                                                     method="post">
                                                     @csrf
                                                     @method('DELETE')
